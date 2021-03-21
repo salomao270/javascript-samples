@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt_br">
     <head>
-        <title>My page</title>>
+        <title>My page</title>
         <meta charset="utf-8">
+        <!-- <script type="text/javascript" src="js/basicSintaxe.js"></script> -->
+        <script type="text/javascript" src="js/basicDOM.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <script>
-            alert("alert funciton called")
+            // alert("alert funciton called by index.html file")
         </script>
-        <h1>My page</h1>
+        <h1>Javascript fundamentals</h1>        
+        <button type="button" onclick="btnClicked()">Click here</button>
+        <p id="thanksForClick" onclick="redirect()"></p>
+        <p id="mouseMove" onmouseover="change()" onmouseout="back()">Pass the mouse here</p>
+        <p id="mouseMoveElement" onmouseover="changeElement(this)" onmouseout="backElement(this)">Pass the mouse here</p>
+        <select onchange="changeFunction(this)">
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+        </select>
     </body>
 </html>
