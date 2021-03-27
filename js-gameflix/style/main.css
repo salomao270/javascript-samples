@@ -1,0 +1,46 @@
+/* selectors */
+    /* nameOfTag{} = for tag html */
+    /* .{} = for class */
+    /* #{} = for id */
+
+/* it is possible to declare variables on css3 */
+:root{
+    --red: #E50914;
+    --black: #141414;
+}
+
+/* this * refers to all elements in html. Bellow is a "reset css" of default properties */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;     /* as elements inside a box/div grows, the size of box wrows too. This property limit the width and heigh of each box(div) */
+}
+
+body{
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display:flex;       /* flex box to align elements */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--red);
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+/* when user pass mouse on menu link change temporary its color */
+header nav a:hover{
+    color:#fff;
+}
