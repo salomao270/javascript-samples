@@ -16,9 +16,11 @@
     box-sizing: border-box;     /* as elements inside a box/div grows, the size of box wrows too. This property limit the width and heigh of each box(div) */
 }
 
+/* base elements */
 body{
     background: var(--black);
     font-family: 'Times New Roman', Times, serif;
+    color:white;
 }
 
 header .container{
@@ -43,4 +45,26 @@ header nav a{
 /* when user pass mouse on menu link change temporary its color */
 header nav a:hover{
     color:#fff;
+}
+
+/* game principal */
+.game-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/js-gameflix/img/bf4.jpg');     /* gradient has 2 colours, thats why same colour twice. */
+    
+    height: 400px;
+    background-size: cover;    /* image size will adapt to div box size */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    /* it start from left */
+}
+
+.game-principal .description {
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 40px;
 }
