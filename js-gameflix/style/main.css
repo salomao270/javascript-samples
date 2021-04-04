@@ -50,7 +50,7 @@ header nav a:hover{
 /* game principal */
 .game-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/js-gameflix/img/bf4.jpg');     /* gradient has 2 colours, thats why same colour twice. */
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/js-gameflix/img/ac2.jpg');     /* gradient has 2 colours, thats why same colour twice. */
     
     height: 400px;
     background-size: cover;    /* image size will adapt to div box size */
@@ -63,8 +63,33 @@ header nav a:hover{
 
 .game-principal .description {
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
-.title{
+.game-principal .title{
+    margin-top: 15%;        /* recomend to work with fluid position (applying % instead of px when possible */
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+    padding: 15px 30px;     /* when 1 value - apply in 4 sides, when 2 values - first value = above and down sides. and second value left and right sides. */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;        /* it will change cursor to a "hand" when user pass mouse on buttons elements*/
+    transition: .3s ease all;   /* takes a time to apply button animation when user pass the mouse */
+}
+
+.button:hover {
+    background-color: white;
+    color:black;
+}
+
+/* font awesome website reference is a script to incorporate in html page and using icons by passing reference*/
+.button i {
+    margin-right: 8px;;
 }
