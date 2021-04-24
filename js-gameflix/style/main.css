@@ -49,8 +49,8 @@ header nav a:hover{
 
 /* game principal */
 .game-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/js-gameflix/img/ac2.jpg');     /* gradient has 2 colours, thats why same colour twice. */
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/ac2.jpg');     /* gradient has 2 colours, thats why same colour twice. */
     
     height: 400px;
     background-size: cover;    /* image size will adapt to div box size */
